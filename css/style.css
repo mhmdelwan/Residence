@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alegreya&family=Alegreya+Sans&family=Caramel&family=Climate+Crisis&family=Dancing+Script&family=Gemunu+Libre&family=Gulzar&family=Lobster&family=Poppins&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root
+{
+    --bg-color: #000;
+}
+
+.center
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.loader
+{
+    display: flex;
+    width: 60px;
+    height: 50px;
+}
+
+.loader span
+{
+    display: block;
+    width: 8px;
+    height: 100%;
+    background: #413F58;
+    margin: auto;
+    animation: animate 1s infinite ease-in-out;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes animate
+{
+    0%, 40%, 100%
+    {
+        transform: scaleY(.05);
+    }
+    20%
+    {
+        transform: scaleY(1);
+    }
+}
+
+.loader span:nth-child(1)
+{
+    background: #413F58;
+}
+
+.loader span:nth-child(2)
+{
+    background: #00f2ff;
+}
+
+.loader span:nth-child(3)
+{
+    background: #59ff00;
+}
+
+.loader span:nth-child(4)
+{
+    background: #ffdd00;
+}
+
+.loader span:nth-child(5)
+{
+    background: #ffa200;
+}
+
+.loader span:nth-child(6)
+{
+    background: red;
+}
+
+
+.home
+{
+    min-height: 100vh;
+}
+
+header
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 10px 12%;
+    transition: all .50s ease;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo img
+{
+    width: 150px;
+}
+
+.logo span
+{
+    /* color: #413F58; */
+    background: -webkit-linear-gradient(0deg, #413F58, #5c72d3, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar
+{
+    display: flex;
+}
+
+.navbar a
+{
+    color: #000;
+    font-size: 14;
+    font-family: 500;
+    padding: 5px 0;
+    margin: 0px 15px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover
+{
+    /* color: #7b89ca; */
+    /* background-color: #7b89ca; */
+    /* border-radius: 7px; */
+    /* padding: 6px 12px; */
+}
+
+.navbar a.active
+{
+    background-color: #7b89ca;
+    border-radius: 7px;
+    padding: 6px 12px;
+}
+
+.show
+{
+    display: none;
+}
+
+.main
+{
+    display: flex;
+    align-items: center;
+}
+
+.main a
+{
+    /* margin-right: 25px; */
+    margin-left: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+.main .add
+{
+    color: #fff;
+    background-color: #413F58;
+    border-radius: 10px;
+    padding: 6px 12px;
+    margin-left: 10px;
+}
+
+.user
+{
+    display: flex;
+    align-items: center;
+}
+
+.user i
+{
+    color: #000;
+    margin-right: 7px;
+}
+
+
+
+#menu-icon
+{
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+.main a
+{
+    color: #000;
+}
+
+.main a i
+{
+    color: #413F58 !important;
+}
+
+
+@media (max-width: 1280px)
+{
+    header
+    {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+
+    .navbar a
+    {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+
+@media (max-width: 1090px)
+{
+    #menu-icon
+    {
+        display: block;
+    }
+
+    .navbar
+    {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 50vh;
+        padding: 0 10px;
+        color: #000;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar a
+    {
+        display: block;
+        margin: 12px 0;
+        padding: 0p 25px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover
+    {
+        color: brown;
+    }
+
+    .navbar a.active
+    {
+        color: #413F58;
+    }
+
+    .navbar.open
+    {
+        right: 2%;
+    }
+
+    .show
+    {
+        display: block;
+    }
+
+    .main a
+    {
+        display: none;
+    }
+}
