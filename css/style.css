@@ -235,11 +235,12 @@ header
 }
 
 
-@media (max-width: 1090px)
+@media (max-width: 946px)
 {
     #menu-icon
     {
         display: block;
+        margin-right: 20px;
     }
 
     .navbar
@@ -248,7 +249,7 @@ header
         top: 100%;
         right: -100%;
         width: 270px;
-        height: 50vh;
+        height: 60vh;
         padding: 0 10px;
         color: #000;
         background-color: rgba(0, 0, 0, 0.2);
