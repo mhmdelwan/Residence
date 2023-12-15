@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Residence</title>
     <link rel="icon" href="images/logo/logo.png">
+    <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -24,7 +25,7 @@
     
     <div class="all">
         <section class="home">
-            <header>
+            <header class="header">
         
                 <ul class="navbar">
                     <li><a href="#" class="link active">home</a></li>
@@ -47,9 +48,88 @@
                 </div>
         
             </header>
+
+            <div id="home">
+                <div class="container">
+                    <h1>Find a perfect home you love..!</h1>
+                    <div class="home-content">
+                        <div class="home-image">
+                            <div class="slider mySwiper">
+                                <div class="slider-img swiper-wrapper">
+                                    <div class="slide swiper-slide">
+                                        <img src="images/home/home.png" class="image" alt="home">
+                                    </div>
+                                    <div class="slide swiper-slide">
+                                        <img src="images/home/home.png" class="image" alt="home">
+                                    </div>
+                                    <div class="slide swiper-slide">
+                                        <img src="images/home/home.png" class="image" alt="home">
+                                    </div>
+                                    <div class="slide swiper-slide">
+                                        <img src="images/home/home.png" class="image" alt="home">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-pagination"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="home-search">
+                            <div class="parent">
+                                <form action="">
+                                    <div class="btns">
+                                        <button class="btn btn1 active">For Sale</button>
+                                        <button class="btn btn2">For Rent</button>
+                                    </div>
+                                    <div class="border"></div>
+                                    <div class="sale">
+                                        <div class="inputs">
+                                            <input type="text" placeholder="New York, San Francisco,etc">
+                                            <select name="sale" id="sale">
+                                                <option value="Select Property Type">Select Property Type</option>
+                                                <option value="Select Property Type">Select Property Type</option>
+                                                <option value="Select Property Type">Select Property Type</option>
+                                                <option value="Select Property Type">Select Property Type</option>
+                                              </select>
+                                            <select name="sale" id="sale">
+                                                <option value="Select Property Type">Select Rooms</option>
+                                                <option value="Select Rooms">Select Rooms</option>
+                                                <option value="Select Property Type">Select Rooms</option>
+                                                <option value="Select Rooms">Select Rooms</option>
+                                              </select>
+                                              <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                                        </div>
+                                    </div>
+                                    <div class="rent">
+                                        <div class="inputs">
+                                            <input type="text" placeholder="New York, San Francisco,etc">
+                                            <select name="sale" id="sale">
+                                                <option value="Select Property Type">Select Property </option>
+                                                <option value="Select Property Type">Select Property Type</option>
+                                                <option value="Select Property Type">Select Property Type</option>
+                                                <option value="Select Property Type">Select Property Type</option>
+                                              </select>
+                                            <select name="sale" id="sale">
+                                                <option value="Select Property Type">Select Rooms</option>
+                                                <option value="Select Rooms">Select Rooms</option>
+                                                <option value="Select Property Type">Select Rooms</option>
+                                                <option value="Select Rooms">Select Rooms</option>
+                                              </select>
+                                              <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </div>
 
+    <script src="js/cdn.jsdelivr.net_npm_swiper@10.2.0_swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
